@@ -120,3 +120,18 @@ echo $HOME
 ```bash
 cd ~/nix-config && sudo darwin-rebuild switch --flake .
 ```
+
+
+## Dev Shells
+
+Java Development Shell
+
+```bash
+nix develop ~/nix-config/dev-shells/java-maven
+```
+
+CPP Development Shell
+
+```bash
+nix develop ~/nix-config/dev-shells/cpp-cmake
+```
