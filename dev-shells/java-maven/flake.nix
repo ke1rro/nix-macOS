@@ -12,7 +12,8 @@
         let pkgs = import nixpkgs { inherit system; };
         in pkgs.mkShell {
           buildInputs = [
-            pkgs.openjdk11
+            pkgs.zsh
+            pkgs.openjdk21
             pkgs.maven
           ];
 
@@ -20,6 +21,7 @@
             echo "🚀 Java/Maven dev shell ready on ${system}!"
             echo "Java: $(java -version 2>&1 | head -n 1)"
             echo "Maven: $(mvn -version 2>&1 | head -n 1)"
+            exec zsh
           '';
         };
     in
