@@ -11,6 +11,7 @@
     bat
     fd
     ripgrep
+    logisim-evolution
   ];
 
   programs.zsh = {
