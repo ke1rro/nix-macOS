@@ -1,5 +1,10 @@
 { config, pkgs, ... }:
 
+let
+  myJDK = pkgs.zulu21;
+in
+
+
 {
   home.username = "nikitalenyk";
   home.homeDirectory = pkgs.lib.mkForce "/Users/nikitalenyk";
@@ -11,7 +16,9 @@
     bat
     fd
     ripgrep
-    logisim-evolution
+    (logisim-evolution.override {
+      jre = myJDK;
+    })
   ];
 
   programs.zsh = {

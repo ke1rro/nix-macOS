@@ -4,10 +4,7 @@
   programs.zsh.enable = true;
 
   environment.systemPackages = with pkgs; [
-    wezterm
-    zoxide
-    starship
-    bat
+    home-manager
     git
     curl
     wget
