@@ -19,6 +19,7 @@ in
     (logisim-evolution.override {
       jre = myJDK;
     })
+    cmake
   ];
 
   programs.zsh = {
