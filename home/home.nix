@@ -10,6 +10,7 @@ in
   home.homeDirectory = pkgs.lib.mkForce "/Users/nikitalenyk";
 
   home.packages = with pkgs; [
+    eza
     wezterm
     zoxide
     starship
@@ -27,6 +28,10 @@ in
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
+
+    shellAliases = {
+      ls = "eza --icons";
+    };
 
     initContent = ''
       eval "$(zoxide init zsh)"
