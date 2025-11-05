@@ -29,6 +29,8 @@ in
     coreutils
     file
     tmux
+    tree
+    procmap
   ];
 
   programs.zsh = {
