@@ -21,6 +21,14 @@ in
       jre = myJDK;
     })
     cmake
+    llvm
+    lldb
+    gnumake
+    pkg-config
+    binutils
+    coreutils
+    file
+    tmux
   ];
 
   programs.zsh = {

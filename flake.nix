@@ -23,6 +23,12 @@
         inherit system;
         modules = [
           ./darwin/configuration.nix
+          {
+            nix.extraOptions = ''
+              auto-optimise-store = true
+              extra-platforms = x86_64-darwin aarch64-darwin
+            '';
+          }
         ];
       };
 
