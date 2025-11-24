@@ -21,16 +21,11 @@ in
       jre = myJDK;
     })
     cmake
-    llvm
     lldb
-    gnumake
     pkg-config
-    binutils
-    coreutils
     file
     tmux
     tree
-    procmap
   ];
 
   programs.zsh = {
