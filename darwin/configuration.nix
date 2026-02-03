@@ -9,6 +9,7 @@
     curl
     wget
     vim
+    (python313.withPackages(ps: with ps; [pip]))
   ];
 
   nix.extraOptions = ''
