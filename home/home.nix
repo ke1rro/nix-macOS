@@ -17,9 +17,6 @@ in
     bat
     fd
     ripgrep
-    (logisim-evolution.override {
-      jre = myJDK;
-    })
     cmake
     lldb
     pkg-config

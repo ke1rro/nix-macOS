@@ -10,6 +10,7 @@
     wget
     vim
     (python313.withPackages(ps: with ps; [pip]))
+    clang-tools
   ];
 
   nix.extraOptions = ''
