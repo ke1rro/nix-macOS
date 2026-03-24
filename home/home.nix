@@ -1,10 +1,4 @@
 { config, pkgs, ... }:
-
-let
-  myJDK = pkgs.zulu21;
-in
-
-
 {
   home.username = "nikitalenyk";
   home.homeDirectory = pkgs.lib.mkForce "/Users/nikitalenyk";
@@ -23,6 +17,8 @@ in
     file
     tmux
     tree
+
+    boost
   ];
 
   programs.zsh = {
